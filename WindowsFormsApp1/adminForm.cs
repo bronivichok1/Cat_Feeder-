@@ -53,8 +53,10 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click_2(object sender, EventArgs e)
+
         {
-            
+
+            Application.Exit();
             
         }
     }
