@@ -29,18 +29,55 @@ namespace WindowsFormsApp1
         public void button1_Click(object sender, EventArgs e)
         {
             string login;
-            login=textBox1.Text+" ";
+            bool T = false;
+            login = textBox1.Text + " ";
             FileStream file1 = new FileStream("log_file.txt", FileMode.Open);
             StreamReader reader = new StreamReader(file1);
-            string loginTXT=
-            if (login=)
+            string line;
+            if (((line = reader.ReadLine()) != null) || (T != true))
+            {
+
+                {
+                    string[] splitLine = line.Split(' ');
+
+                    string loginTXT = splitLine[0] + " ";
+                    if (login != loginTXT)
+                    {
+
+                        MessageBox.Show("Пользователь успешно создан");
+
+                        T = true;
 
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Такой пользователь уже существует");
+                        textBox1.Text = "";
+                        T = false;
+                    }
+                }
+            }
+                
+                if (T == true)
+                {
+                    reader.Close();
+                    File.AppendAllText("log_file.txt", login);
+                adminForm AdminForm = new adminForm();
+                AdminForm.Show();
+                this.Hide();
+
+
+            }
+                    
             
-            File.AppendAllText("log_file.txt",login);
-          
-        }
 
-       
+
+
+            }
+
+
+        }
     }
-}
+
+

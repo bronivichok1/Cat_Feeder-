@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             AdminLoginForm lgnForm = new AdminLoginForm(this);
-
+            
             string login = "admin";
             if (textBox2.Text == login)
             {
