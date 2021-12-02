@@ -37,6 +37,7 @@ namespace WindowsFormsApp1
             if (((line = reader.ReadLine()) != null) || (T != true))
             {
 
+
                 {
                     string[] splitLine = line.Split(' ');
 
@@ -57,27 +58,30 @@ namespace WindowsFormsApp1
                         T = false;
                     }
                 }
+
             }
-                
-                if (T == true)
-                {
-                    reader.Close();
-                    File.AppendAllText("log_file.txt", login);
+            if (T == true)
+            {
+                reader.Close();
+                FileStream file2 = new FileStream("log_file.txt", FileMode.Open);
+                StreamWriter writer = new StreamWriter(file2);
+                writer.WriteLine(login);
+                writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
                 this.Hide();
 
 
             }
-                    
-            
 
 
 
-            }
 
 
         }
+
+
     }
+}
 
 
