@@ -62,6 +62,7 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(34, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "title";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // add_feederForm
             // 

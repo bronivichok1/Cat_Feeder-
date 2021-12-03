@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
         {
             feeder_seting feeder_seting = new feeder_seting();
             feeder_seting.Show();
-
+            this.Hide();
         }
     }
 }

@@ -1,5 +1,2 @@
-cat3 
-cat4 
-cat2 
-cat6 
-cat10 
+pashacat 
+polinacat  

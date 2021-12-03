@@ -40,36 +40,41 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(307, 22);
+            this.button1.Location = new System.Drawing.Point(345, 28);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 42);
+            this.button1.Size = new System.Drawing.Size(209, 52);
             this.button1.TabIndex = 0;
-            this.button1.Text = "create a label";
+            this.button1.Text = "Setting name";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(307, 70);
+            this.button2.Location = new System.Drawing.Point(345, 88);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 41);
+            this.button2.Size = new System.Drawing.Size(209, 51);
             this.button2.TabIndex = 1;
             this.button2.Text = "create Schedule";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(307, 117);
+            this.button3.Location = new System.Drawing.Point(345, 146);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 46);
+            this.button3.Size = new System.Drawing.Size(209, 58);
             this.button3.TabIndex = 2;
             this.button3.Text = "manual control";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(307, 169);
+            this.button4.Location = new System.Drawing.Point(345, 211);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 58);
+            this.button4.Size = new System.Drawing.Size(209, 72);
             this.button4.TabIndex = 3;
             this.button4.Text = "Choosing the type of feed";
             this.button4.UseVisualStyleBackColor = true;
@@ -77,9 +82,10 @@ namespace WindowsFormsApp1
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(307, 233);
+            this.button5.Location = new System.Drawing.Point(345, 291);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 48);
+            this.button5.Size = new System.Drawing.Size(209, 60);
             this.button5.TabIndex = 4;
             this.button5.Text = "Condition monitoring";
             this.button5.UseVisualStyleBackColor = true;
@@ -87,27 +93,29 @@ namespace WindowsFormsApp1
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(307, 287);
+            this.button6.Location = new System.Drawing.Point(345, 359);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(186, 65);
+            this.button6.Size = new System.Drawing.Size(209, 81);
             this.button6.TabIndex = 5;
             this.button6.Text = "Selecting a ready-made schedule";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(307, 358);
+            this.button7.Location = new System.Drawing.Point(345, 448);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(186, 60);
+            this.button7.Size = new System.Drawing.Size(209, 75);
             this.button7.TabIndex = 6;
             this.button7.Text = "Choosing the type of feeder";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // feeder_seting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -115,6 +123,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "feeder_seting";
             this.Text = "feeder_seting";
             this.ResumeLayout(false);
