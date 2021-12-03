@@ -51,9 +51,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(294, 132);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Cat name";
+            this.label1.Text = "Feeder";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // textBox1
@@ -62,6 +62,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 

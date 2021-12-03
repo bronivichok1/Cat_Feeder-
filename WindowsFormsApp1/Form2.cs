@@ -54,17 +54,17 @@ namespace WindowsFormsApp1
 
 
 
-            for (int i = 0; i == 1; i++)
+            for (int i = 0; i == 4; i++)
             {
 
-                for (int j1 = 0; j1 < 7; j1++)
+                for (int j1 = 0; j1 < 25; j1++)
                 {
                     j++;
 
                     for (int d1 = 0; d1 < 4 && j == 6; d1++)
                     {
                         d++;
-
+                       
                         if (j == 6)
                         {
                             j = 0;
@@ -73,11 +73,13 @@ namespace WindowsFormsApp1
                         {
                             d = 0;
                         }
-
+                        
                     }
-
+                    
                 }
-
+                string k1 = d.ToString();
+                string k2 = j.ToString();
+                File.WriteAllText("data.txt", "\n" + k1 + "day" + "\n" + k2 + "hours");
             }
             
         }
@@ -86,29 +88,7 @@ namespace WindowsFormsApp1
         {
 
         }
-       
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-
-        {
-            int k1 = d;
-            string s1 = k1.ToString();
-           
-           
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            int k2 = j * 4;
-            string s2 = k2.ToString();
-            
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int k2 = j * 4;
-            string s2 = k2.ToString();
-            listView1.Text = s2;
-        }
+        
     }
 }

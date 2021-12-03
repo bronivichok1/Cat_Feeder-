@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,11 +28,60 @@ namespace WindowsFormsApp1
 
         }
 
+        private void textBox1_TextChanged (object sender, EventArgs e)
+        {
+            
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
-            User_Form User_Form = new User_Form();
-            User_Form.Show();
-            this.Hide();
+            string feeder;
+            bool T = true;
+            feeder = textBox1.Text ;
+            FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open, FileAccess.ReadWrite);
+            StreamReader reader = new StreamReader(file1);
+            string line;
+
+            while (((line = reader.ReadLine()) != null))
+            {
+
+                string[] splitLine = line.Split(' ');
+
+
+                string loginTXT = splitLine[0];
+
+                if (feeder != loginTXT)
+                {
+
+                    T = true;
+
+                }
+                else
+                {
+
+                    T = false;
+
+                    break;
+                }
+
+            }
+
+            if (T == true)
+            {
+                MessageBox.Show("Такой кормушки нет");
+                textBox1.Text = "";
+                reader.Close();
+            }
+            else
+            {
+                MessageBox.Show("Успешный вход ");
+
+                User_Form User_Form = new User_Form();
+                User_Form.Show();
+                
+                this.Hide();
+
+            }
         }
     }
 }
