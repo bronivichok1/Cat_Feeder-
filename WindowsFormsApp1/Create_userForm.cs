@@ -29,55 +29,53 @@ namespace WindowsFormsApp1
         public void button1_Click(object sender, EventArgs e)
         {
             string login;
-            bool T = false;
+            bool T = true;
             login = textBox1.Text + " ";
-            FileStream file1 = new FileStream("log_file.txt", FileMode.Open);
+            FileStream file1 = new FileStream("log_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
             string line;
-            if (((line = reader.ReadLine()) != null) || (T != true))
+
+            while (((line = reader.ReadLine()) != null))
             {
 
+                string[] splitLine = line.Split(' ');
 
+
+                string loginTXT = splitLine[0] + " ";
+
+                if (login != loginTXT)
                 {
-                    string[] splitLine = line.Split(' ');
 
-                    string loginTXT = splitLine[0] + " ";
-                    if (login != loginTXT)
-                    {
+                    T = true;
 
-                        MessageBox.Show("Пользователь успешно создан");
+                }
+                else
+                {
 
-                        T = true;
+                    T = false;
 
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("Такой пользователь уже существует");
-                        textBox1.Text = "";
-                        T = false;
-                    }
+                    break;
                 }
 
             }
-            if (T == true)
+
+            if (T == false)
             {
+                MessageBox.Show("Такой пользователь уже есть");
+                textBox1.Text = "";
                 reader.Close();
-                FileStream file2 = new FileStream("log_file.txt", FileMode.Open);
-                StreamWriter writer = new StreamWriter(file2);
+            }
+            else
+            {
+                MessageBox.Show("Пользовтель успешно создан");
+                StreamWriter writer = new StreamWriter(file1);
                 writer.WriteLine(login);
                 writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
                 this.Hide();
 
-
             }
-
-
-
-
-
         }
 
 

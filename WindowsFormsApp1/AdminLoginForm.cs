@@ -39,6 +39,7 @@ namespace WindowsFormsApp1
                 this.Hide();
             }
             else MessageBox.Show("Не верный пароль");
+            textBox2.Text = "";
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)

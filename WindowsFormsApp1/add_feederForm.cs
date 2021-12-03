@@ -24,45 +24,53 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             string feeder;
-            bool T = false;
+            bool T = true;
             feeder = textBox1.Text + " ";
-            FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open);
+            FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
-            string line;
-            if (((line = reader.ReadLine()) != null) || (T != true))
+            string line ;
+           
+            while (((line = reader.ReadLine()) != null))
             {
-
-                {
+                
                     string[] splitLine = line.Split(' ');
-
+                
+                
                     string loginTXT = splitLine[0] + " ";
-                    if (feeder != loginTXT)
+                
+                if (feeder != loginTXT)
                     {
-
-                        MessageBox.Show("Кормушка успешно создана ");
-
-                        T = true;
-
-
+                    
+                    T =true;
+                        
                     }
                     else
                     {
-                        MessageBox.Show("Такая кормушка уже есть");
-                        textBox1.Text = "";
-                        T = false;
-                    }
+                    
+                    T = false;
+                    
+                    break;
                 }
+           
             }
-
-            if (T == true)
+            
+            if (T == false)
             {
+                MessageBox.Show("Такая кормушка уже есть");
+                textBox1.Text = "";
                 reader.Close();
-                File.AppendAllText("feeder_file.txt", feeder);
+            }
+            else 
+            {
+                MessageBox.Show("Кормушка успешно создана ");
+               
+                StreamWriter writer = new StreamWriter(file1);
+                writer.WriteLine(feeder);
+                writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
                 this.Hide();
-
-
+                
             }
         }
 

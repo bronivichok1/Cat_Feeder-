@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -20,15 +20,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            UserLoginForm User_Login_Form = new UserLoginForm();
-
-
-            User_Login_Form.Show();
-            this.Hide();
-        }
-
+       
         private void button2_Click(object sender, EventArgs e)
         {
             AdminLoginForm lgnForm = new AdminLoginForm(this);
@@ -40,6 +32,7 @@ namespace WindowsFormsApp1
                 this.Hide();
             }
             else MessageBox.Show("Не верный логин");
+            textBox2.Text = "";
 
         }
 
@@ -72,5 +65,71 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string login;
+            bool T = true;
+            login = textBox1.Text + "  ";
+            FileStream file1 = new FileStream("log_file.txt", FileMode.Open, FileAccess.ReadWrite);
+            StreamReader reader = new StreamReader(file1);
+            string line;
+
+            while (((line = reader.ReadLine()) != null))
+            {
+
+                string[] splitLine = line.Split(' ');
+
+
+                string loginTXT = splitLine[0] + " ";
+
+                if (login != loginTXT)
+                {
+
+                    T = true;
+
+                }
+                else
+                {
+
+                    T = false;
+
+                    break;
+                }
+
+            }
+
+            if (T == false)
+            {
+                reader.Close();
+                MessageBox.Show("Такого пользователя нет ");
+                textBox1.Text = "";
+            }
+            else
+            {
+                
+               
+                reader.Close();
+                UserLoginForm User_Login_Form = new UserLoginForm();
+                User_Login_Form.Show();
+                this.Hide();
+
+            }
+        }
+
+          
+
+
+            
+
     }
-}
+            
+            
+        }
+
+
+ 
