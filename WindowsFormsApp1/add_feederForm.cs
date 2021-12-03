@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Кормушка успешно создана ");
                
                 StreamWriter writer = new StreamWriter(file1);
-                writer.WriteLine(feeder);
+                writer.WriteLine("/n"+feeder);
                 writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();

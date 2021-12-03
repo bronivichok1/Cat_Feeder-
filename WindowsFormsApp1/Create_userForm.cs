@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         {
             string login;
             bool T = true;
-            login = textBox1.Text + " ";
+            login = textBox1.Text ;
             FileStream file1 = new FileStream("log_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
             string line;
@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
                 string[] splitLine = line.Split(' ');
 
 
-                string loginTXT = splitLine[0] + " ";
+                string loginTXT = splitLine[0] ;
 
                 if (login != loginTXT)
                 {
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Пользовтель успешно создан");
                 StreamWriter writer = new StreamWriter(file1);
-                writer.WriteLine(login);
+                writer.WriteLine("\n"+login);
                 writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
