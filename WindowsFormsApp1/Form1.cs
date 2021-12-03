@@ -91,7 +91,7 @@ namespace WindowsFormsApp1
                 {
 
                     T = true;
-
+                    
                 }
                 else
                 {
@@ -103,7 +103,7 @@ namespace WindowsFormsApp1
 
             }
 
-            if (T == false)
+            if (T == true)
             {
                 reader.Close();
                 MessageBox.Show("Такого пользователя нет ");

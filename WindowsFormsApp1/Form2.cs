@@ -33,38 +33,36 @@ namespace WindowsFormsApp1
         public void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             int  ncheck;
-            CheckBox checkBox = (CheckBox)sender; 
-            if (checkBox.Checked == true)
-            {
-                ncheck=1;
-            }
-            else
-            {
-                ncheck = 0;
-            }
+            
+                CheckBox checkBox = (CheckBox)sender;
+                if (checkBox.Checked == true)
+                {
+                    ncheck = 1;
+                }
+                else
+                {
+                    ncheck = 0;
+                }
+            
             int j = 0;
             int k = 0;
             int d = 0;
             while (ncheck!=0)
             {
                 
-                if (d<7)
+                if (k<6)
                 {
-                    d++;
-                    if (j<25) 
+                    k++;
+                    string s1 = k.ToString();
+                    File.AppendAllText("shet.txt", s1);
+                    if (j<8&&k==5) 
                     {
                         j++;
-                        string s2 = j.ToString();
-                        File.AppendAllText("shet.txt", s2);
-                        if (k<6) 
+                       
+                        if (d<8&&j==3) 
                         {
-                            k++;
-                            
-                                
-                              
-                                string s1 = k.ToString();
-                                File.AppendAllText("shet.txt", s1);
-                            
+                            d++;       
+                          
                         }
                     
                     }
