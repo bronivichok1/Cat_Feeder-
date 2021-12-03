@@ -102,7 +102,9 @@ namespace WindowsFormsApp1
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            feeder_seting fedSet = new feeder_seting();
+            fedSet.Show();
+            this.Hide();
         }
     }
 }
