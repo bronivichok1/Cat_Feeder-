@@ -98,6 +98,12 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            feeder_seting feeds = new feeder_seting();
+            feeds.Show();
+            this.Hide();
+        }
     }
 
     }

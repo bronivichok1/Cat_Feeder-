@@ -41,6 +41,7 @@ namespace WindowsFormsApp1
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -63,11 +64,22 @@ namespace WindowsFormsApp1
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(40, 22);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(125, 58);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Back";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Create_userForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -83,5 +95,6 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button8;
     }
 }

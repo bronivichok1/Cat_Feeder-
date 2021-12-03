@@ -19,3 +19,7 @@ C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Get_infoForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Change_scheduleForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Check_status.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Check_the_scheduleForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feedForm.resources

@@ -70,13 +70,22 @@ namespace WindowsFormsApp1
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
                 this.Hide();
-                
+                File.AppendAllText("FileINFO.txt", "\n" + "Создана новая кормушка"+feeder);
+
+
             }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            adminForm adFor = new adminForm();
+            adFor.Show();
+            this.Hide();
         }
     }
 }

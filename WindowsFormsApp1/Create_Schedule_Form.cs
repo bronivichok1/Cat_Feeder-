@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
             StreamWriter writer = new StreamWriter(file1);
             writer.WriteLine(Schedule);
             writer.Close();
+            File.AppendAllText("FileINFO.txt", "\n" + "Создана новое расписание" + Schedule);
         }
     }
 }

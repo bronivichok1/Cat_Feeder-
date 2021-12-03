@@ -16,5 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            adminForm adF = new adminForm();
+            adF.Show();
+            this.Hide();
+        }
     }
 }

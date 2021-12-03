@@ -74,11 +74,16 @@ namespace WindowsFormsApp1
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
                 this.Hide();
-
+                File.AppendAllText("FileINFO.txt", "\n" + "Создана новый пользователь" + login);
             }
         }
 
-
+        private void button8_Click(object sender, EventArgs e)
+        {
+            adminForm adF = new adminForm();
+            adF.Show();
+            this.Hide();
+        }
     }
 }
 

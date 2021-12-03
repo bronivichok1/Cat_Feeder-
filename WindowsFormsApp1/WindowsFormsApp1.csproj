@@ -153,6 +153,15 @@
     <EmbeddedResource Include="add_feederForm.resx">
       <DependentUpon>add_feederForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Change_scheduleForm.resx">
+      <DependentUpon>Change_scheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_status.resx">
+      <DependentUpon>Check_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_the_scheduleForm.resx">
+      <DependentUpon>Check_the_scheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Create_Schedule_Form.resx">
       <DependentUpon>Create_Schedule_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="feeder_seting.resx">
       <DependentUpon>feeder_seting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedForm.resx">
+      <DependentUpon>feedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
