@@ -19,7 +19,9 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Feed_Type feedType = new Feed_Type();
+            feedType.Show();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,6 +54,13 @@ namespace WindowsFormsApp1
         {
             feeder_controlForm feeder_cF = new feeder_controlForm();
             feeder_cF.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Feeder_Type feederType = new Feeder_Type();
+            feederType.Show();
             this.Hide();
         }
     }

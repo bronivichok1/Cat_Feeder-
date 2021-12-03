@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            File.AppendAllText("FileINFO.txt", "\n" + "Началась симуляция 4 часов" );
 
 
             for (int i = 0; i == 4; i++)

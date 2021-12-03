@@ -94,6 +94,8 @@ namespace WindowsFormsApp1
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
                 this.Hide();
+                File.WriteAllText("name_feeder_for_type.txt", FeedNew);
+                File.AppendAllText("FileINFO.txt", "\n" + "Кормушка" + FeedStar + "изменена на"+FeedNew);
 
             }
         }

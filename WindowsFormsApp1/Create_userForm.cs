@@ -75,6 +75,7 @@ namespace WindowsFormsApp1
                 AdminForm.Show();
                 this.Hide();
                 File.AppendAllText("FileINFO.txt", "\n" + "Создана новый пользователь" + login);
+                File.AppendAllText("FileINFO.txt", "\n" + "Создан пользователь"+login);
             }
         }
 

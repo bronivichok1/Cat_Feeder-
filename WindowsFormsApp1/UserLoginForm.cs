@@ -75,11 +75,12 @@ namespace WindowsFormsApp1
             else
             {
                 MessageBox.Show("Успешный вход ");
-
+                File.WriteAllText("name_feeder_for_type.txt", feeder);
                 User_Form User_Form = new User_Form();
                 User_Form.Show();
                 
                 this.Hide();
+                File.AppendAllText("FileINFO.txt", "\n" + "Пользователь вошёл в кормушку" + feeder);
 
             }
         }

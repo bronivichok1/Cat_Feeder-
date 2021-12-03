@@ -36,13 +36,25 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             string Schedule;
-            
+
             Schedule = textBox1.Text + " ";
             FileStream file1 = new FileStream("Schedule_file.txt", FileMode.Open);
             StreamWriter writer = new StreamWriter(file1);
-            writer.WriteLine(Schedule);
+            writer.WriteLine("\n" + Schedule);
             writer.Close();
-            File.AppendAllText("FileINFO.txt", "\n" + "Создана новое расписание" + Schedule);
+
+            string Schedule_time;
+            Schedule_time = checkedListBox1.Text + " ";
+            FileStream file2 = new FileStream("Schedule_time_file.txt", FileMode.Open);
+            StreamWriter streamWriter = new StreamWriter(file2);
+            streamWriter.WriteLine("\n" + Schedule_time);
+            streamWriter.Close();
+
+            MessageBox.Show("Расписание успешно создано ");
+            File.AppendAllText("FileINFO.txt", "\n" + "Создано расписание"+Schedule);
+            Create_Schedule_Form Create_Schedule_Form = new Create_Schedule_Form();
+            Create_Schedule_Form.Show();
+            this.Hide();
         }
     }
 }
