@@ -1,6 +1,3 @@
-C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.add_feederForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Change_scheduleForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Check_status.resources
@@ -9,7 +6,9 @@ C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_controlForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Create_userForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_seting.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Feeder_Type.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feedForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Feed_Type.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLoginForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
@@ -20,5 +19,8 @@ C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserLoginForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User_Form.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
