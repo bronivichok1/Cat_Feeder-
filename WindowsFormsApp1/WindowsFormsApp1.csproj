@@ -177,6 +177,9 @@
     <EmbeddedResource Include="FormMetka.resx">
       <DependentUpon>FormMetka.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Get_infoForm.resx">
+      <DependentUpon>Get_infoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
