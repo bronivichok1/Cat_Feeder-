@@ -94,28 +94,21 @@ namespace WindowsFormsApp1
             int k1 = d;
             string s1 = k1.ToString();
            
-            AutoCompleteStringCollection source = new AutoCompleteStringCollection()
-        {
-            s1
-        };
-
-            textBox1.AutoCompleteCustomSource = source;
-            textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource; 
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             int k2 = j * 4;
             string s2 = k2.ToString();
-            AutoCompleteStringCollection source = new AutoCompleteStringCollection()
-        {
-            s2
-        };
+            
+        }
 
-            textBox2.AutoCompleteCustomSource = source;
-            textBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            textBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int k2 = j * 4;
+            string s2 = k2.ToString();
+            listView1.Text = s2;
         }
     }
 }
