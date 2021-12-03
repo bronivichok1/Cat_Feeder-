@@ -1,9 +1,12 @@
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.add_feederForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Create_Schedule_Form.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_controlForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Create_userForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_seting.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLoginForm.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMetka.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.adminForm.resources
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserLoginForm.resources
@@ -15,5 +18,3 @@ C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMetka.resources
-C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources

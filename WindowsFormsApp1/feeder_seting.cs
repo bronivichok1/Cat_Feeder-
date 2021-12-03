@@ -33,5 +33,19 @@ namespace WindowsFormsApp1
             formMetka.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Create_Schedule_Form Create_Schedule_Form = new Create_Schedule_Form();
+            Create_Schedule_Form.Show();
+            this.Hide();
+        }
     }
 }
