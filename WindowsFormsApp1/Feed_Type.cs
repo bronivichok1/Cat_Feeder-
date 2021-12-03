@@ -41,20 +41,22 @@ namespace WindowsFormsApp1
 
                 string loginTXT = null;
                 string feederT = null;
-
+               
                 while (((line = reader.ReadLine()) != null))
                 {
                     string[] splitLine = line.Split(' ');
-                    loginTXT = splitLine[0];
-                    feederT = splitLine[1];
-                }
 
+
+                     loginTXT = splitLine[0] + " ";
+
+                }
+               
                 reader.Close();
                 File.WriteAllText("FiderName\\Korm1.txt", "");
                 FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
-                writer2.WriteLine("\n" + loginTXT + " ");
-                writer2.WriteLine("\n" + feederT + " ");
+                writer2.WriteLine( loginTXT + " ");
+                writer2.WriteLine( feederT + " ");
                 writer2.WriteLine("suhoy");
                 writer2.Close();
 
