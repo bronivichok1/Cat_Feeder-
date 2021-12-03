@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             
-            MessageBox.Show("restart");
+          
             int Nos = 0;
             Nos++;
             if (Nos==1)
@@ -89,6 +89,10 @@ namespace WindowsFormsApp1
 
         }
 
-        
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+           
+        }
     }
 }

@@ -56,5 +56,12 @@ namespace WindowsFormsApp1
             Create_Schedule_Form.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            feeder_seting fedS = new feeder_seting();
+            fedS.Show();
+            this.Hide();
+        }
     }
 }

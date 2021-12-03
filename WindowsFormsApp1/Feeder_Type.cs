@@ -53,8 +53,8 @@ namespace WindowsFormsApp1
                 string[] splitLine = line.Split(' ');
                 string loginTXT = splitLine[0];
                 reader.Close();
-                File.WriteAllText("FeederName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FeederName\\Korm1.txt", FileMode.Create);
+                File.WriteAllText("FiderName\\Korm1.txt", "");
+                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
                 writer2.WriteLine(loginTXT + " ");
                 writer2.WriteLine("\n" + "el");
@@ -78,8 +78,8 @@ namespace WindowsFormsApp1
                 string[] splitLine = line.Split(' ');
                 string loginTXT = splitLine[0];
                 reader.Close();
-                File.WriteAllText("FeederName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FeederName\\Korm1.txt", FileMode.Create);
+                File.WriteAllText("FiderName\\Korm1.txt", "");
+                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
                 writer2.WriteLine(loginTXT + " ");
                 writer2.WriteLine("\n" + "mex");
