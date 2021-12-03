@@ -51,5 +51,12 @@ namespace WindowsFormsApp1
             Get_infoForm.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }

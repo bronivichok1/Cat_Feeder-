@@ -16,3 +16,4 @@ C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\bin\Debug\WindowsFormsApp
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMetka.resources
+C:\Users\Acer\source\repos\Cat_Feeder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
