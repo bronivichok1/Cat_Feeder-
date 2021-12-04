@@ -32,11 +32,10 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             string Schedule;
-            string sssr = "2k3rk;l23rklr3k;l32kl";
             Schedule = textBox1.Text + " ";
             FileStream file1 = new FileStream("Schedule_file.txt", FileMode.Open);
             StreamWriter writer = new StreamWriter(file1);
