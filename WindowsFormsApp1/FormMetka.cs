@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
 
             }
 
-            if (T == false)
+            if (!T)
             {
                 MessageBox.Show("Такого названия нет");
                 textBox1.Text = "";

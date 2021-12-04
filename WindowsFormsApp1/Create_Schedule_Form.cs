@@ -43,10 +43,10 @@ namespace WindowsFormsApp1
             writer.WriteLine("\n" + Schedule);
             writer.Close();
 
-            string Schedule_time;
+            string scheduleTime;
             Schedule_time = checkedListBox1.Text + " ";
-            FileStream file2 = new FileStream("Schedule_time_file.txt", FileMode.Open);
-            StreamWriter streamWriter = new StreamWriter(file2);
+            var file2 = new FileStream("Schedule_time_file.txt", FileMode.Open);
+            var streamWriter = new StreamWriter(file2);
             streamWriter.WriteLine("\n" + Schedule_time);
             streamWriter.Close();
 
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         {
             feeder_seting fedS = new feeder_seting();
             fedS.Show();
-            this.Hide();
+            Hide();
         }
     }
 }
