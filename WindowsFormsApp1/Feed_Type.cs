@@ -108,5 +108,10 @@ namespace WindowsFormsApp1
             fedSet.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

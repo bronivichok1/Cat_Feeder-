@@ -33,5 +33,12 @@ namespace WindowsFormsApp1
             feeder_seting.Show();
             this.Hide();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            User_Form fedS = new User_Form();
+            fedS.Show();
+            this.Hide();
+        }
     }
 }
