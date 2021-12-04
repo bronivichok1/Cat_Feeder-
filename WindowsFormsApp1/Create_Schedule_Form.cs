@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
             writer.WriteLine("\n" + Schedule);
             writer.Close();
 
-            string scheduleTime;
+            string Schedule_time;
             Schedule_time = checkedListBox1.Text + " ";
             var file2 = new FileStream("Schedule_time_file.txt", FileMode.Open);
             var streamWriter = new StreamWriter(file2);
