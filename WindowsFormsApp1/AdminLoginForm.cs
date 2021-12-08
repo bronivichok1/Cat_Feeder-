@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
