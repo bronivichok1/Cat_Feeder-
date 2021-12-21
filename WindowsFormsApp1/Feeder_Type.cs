@@ -52,12 +52,12 @@ namespace WindowsFormsApp1
                 writer2.WriteLine(loginTXT + " ");
                 writer2.WriteLine("\n" + "el");
                 writer2.Close();
-                File.AppendAllText("FileINFO.txt", "\n" + "Задан тип кормушки"+loginTXT+"el");
+                File.AppendAllText("FileINFO.txt", "\n" + "Задан тип кормушки" + loginTXT + "el");
 
                 MessageBox.Show("Тип кормушки установлен! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
-                this.Hide();
+                Hide();
 
             }
 
@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Тип кормушки установлен! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
-                this.Hide();
+                Hide();
 
             }
         }
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
         {
             feeder_seting fedset = new feeder_seting();
             fedset.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

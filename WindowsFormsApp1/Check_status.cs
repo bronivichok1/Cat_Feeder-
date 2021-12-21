@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         {
             adminForm adF = new adminForm();
             adF.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

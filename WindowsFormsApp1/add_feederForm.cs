@@ -21,49 +21,49 @@ namespace WindowsFormsApp1
             feeder = textBox1.Text + " ";
             FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
-            string line ;
-           
+            string line;
+
             while (((line = reader.ReadLine()) != null))
             {
-                
-                    string[] splitLine = line.Split(' ');
-                
-                
-                    string loginTXT = splitLine[0] + " ";
-                
+
+                string[] splitLine = line.Split(' ');
+
+
+                string loginTXT = splitLine[0] + " ";
+
                 if (feeder != loginTXT)
-                    {
-                    
-                    T =true;
-                        
-                    }
-                    else
-                    {
-                    
+                {
+
+                    T = true;
+
+                }
+                else
+                {
+
                     T = false;
-                    
+
                     break;
                 }
-           
+
             }
-            
+
             if (T == false)
             {
                 MessageBox.Show("Такая кормушка уже есть");
                 textBox1.Text = "";
                 reader.Close();
             }
-            else 
+            else
             {
                 MessageBox.Show("Кормушка успешно создана ");
-               
+
                 StreamWriter writer = new StreamWriter(file1);
-                writer.WriteLine("/n"+feeder);
+                writer.WriteLine("/n" + feeder);
                 writer.Close();
                 adminForm AdminForm = new adminForm();
                 AdminForm.Show();
-                this.Hide();
-                File.AppendAllText("FileINFO.txt", "\n" + "Создана новая кормушка"+feeder);
+                Hide();
+                File.AppendAllText("FileINFO.txt", "\n" + "Создана новая кормушка" + feeder);
 
 
             }

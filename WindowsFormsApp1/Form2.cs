@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         {
             User_Form User_form = new User_Form();
             User_form.Show();
-            this.Hide();
+            Hide();
             NS = false;
         }
 
@@ -89,8 +89,8 @@ namespace WindowsFormsApp1
 
             if (NS = false)
             {
-                this.axWindowsMediaPlayer1.close();
-                this.Controls.Remove(axWindowsMediaPlayer1);
+                axWindowsMediaPlayer1.close();
+                Controls.Remove(axWindowsMediaPlayer1);
 
             }
         }

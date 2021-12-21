@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
+using System.Data.SqlClient;
+using System.Data;
+using static System.Data.CommandType;
+using static WindowsFormsApp1.Data.Repository;
 
 namespace WindowsFormsApp1
 {
@@ -12,16 +16,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-       
+
         private void button2_Click(object sender, EventArgs e)
         {
             AdminLoginForm lgnForm = new AdminLoginForm(this);
-            
+
             string login = "admin";
             if (textBox2.Text == login)
             {
                 lgnForm.Show();
-                this.Hide();
+                Hide();
             }
             else MessageBox.Show("Не верный логин");
             textBox2.Text = "";
@@ -64,26 +68,25 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string login;
             bool T = true;
-            login = textBox1.Text ;
+            var login = textBox1.Text;
             FileStream file1 = new FileStream("log_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
             string line;
 
-            while (((line = reader.ReadLine()) != null))
+            while ((line = reader.ReadLine()) != null)
             {
 
                 string[] splitLine = line.Split(' ');
 
 
-                string loginTXT = splitLine[0] ;
+                string loginTXT = splitLine[0];
 
                 if (login != loginTXT)
                 {
 
                     T = true;
-                    
+
                 }
                 else
                 {
@@ -95,7 +98,7 @@ namespace WindowsFormsApp1
 
             }
 
-            if (T == true)
+            if (T)
             {
                 reader.Close();
                 MessageBox.Show("Такого пользователя нет ");
@@ -103,12 +106,12 @@ namespace WindowsFormsApp1
             }
             else
             {
-                
-               
+
+
                 reader.Close();
                 UserLoginForm User_Login_Form = new UserLoginForm();
                 User_Login_Form.Show();
-                this.Hide();
+                Hide();
 
             }
         }
@@ -123,9 +126,9 @@ namespace WindowsFormsApp1
 
         }
     }
-            
-            
-        }
 
 
- 
+}
+
+
+

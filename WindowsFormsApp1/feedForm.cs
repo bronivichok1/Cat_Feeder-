@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         {
             User_Form UsFor = new User_Form();
             UsFor.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

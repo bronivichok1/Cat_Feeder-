@@ -21,16 +21,16 @@ namespace WindowsFormsApp1
 
         }
 
-        private void textBox1_TextChanged (object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             string feeder;
             bool T = true;
-            feeder = textBox1.Text ;
+            feeder = textBox1.Text;
             FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
             string line;
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
 
             }
 
-            if (T == true)
+            if (T)
             {
                 MessageBox.Show("Такой кормушки нет");
                 textBox1.Text = "";
@@ -71,8 +71,8 @@ namespace WindowsFormsApp1
                 File.WriteAllText("name_feeder_for_type.txt", feeder);
                 User_Form User_Form = new User_Form();
                 User_Form.Show();
-                
-                this.Hide();
+
+                Hide();
                 File.AppendAllText("FileINFO.txt", "\n" + "Пользователь вошёл в кормушку" + feeder);
 
             }
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

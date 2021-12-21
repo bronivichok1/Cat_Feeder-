@@ -24,14 +24,14 @@ namespace WindowsFormsApp1
         {
             feeder_seting feeder_seting = new feeder_seting();
             feeder_seting.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             User_Form fedS = new User_Form();
             fedS.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

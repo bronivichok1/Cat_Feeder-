@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             if (textBox2.Text == pass)
             {
                 AdminForm.Show();
-                this.Hide();
+                Hide();
                 File.AppendAllText("FileINFO.txt", "\n" + "Админ зашёл в аккаунт" );
             }
             else MessageBox.Show("Не верный пароль");
@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

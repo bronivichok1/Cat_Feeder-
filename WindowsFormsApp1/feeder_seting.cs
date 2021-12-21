@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         {
             Feed_Type feedType = new Feed_Type();
             feedType.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
         {
             FormMetka formMetka = new FormMetka();
             formMetka.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -34,27 +34,27 @@ namespace WindowsFormsApp1
 
         }
 
-        
+
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             Create_Schedule_Form Create_Schedule_Form = new Create_Schedule_Form();
             Create_Schedule_Form.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             feeder_controlForm feeder_cF = new feeder_controlForm();
             feeder_cF.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             Feeder_Type feederType = new Feeder_Type();
             feederType.Show();
-            this.Hide();
+            Hide();
         }
     }
 }
