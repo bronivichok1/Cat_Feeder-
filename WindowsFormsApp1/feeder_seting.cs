@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -26,7 +27,9 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            ConditionMonitoring conditionMonitoring = new ConditionMonitoring();
+            conditionMonitoring.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

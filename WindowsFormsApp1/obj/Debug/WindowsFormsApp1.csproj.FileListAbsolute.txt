@@ -96,3 +96,38 @@ C:\Users\Acer\source\repos\1\Cat_Feeder-\WindowsFormsApp1\obj\Debug\WindowsForms
 C:\Users\Acer\source\repos\1\Cat_Feeder-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Acer\source\repos\1\Cat_Feeder-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Acer\source\repos\1\Cat_Feeder-\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManualControl.resources
+D:\Технологии программирования\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Технологии программирования\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Технологии программирования\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Технологии программирования\WindowsFormsApp1\bin\Debug\Interop.WMPLib.dll
+D:\Технологии программирования\WindowsFormsApp1\bin\Debug\AxInterop.WMPLib.dll
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\AxInterop.WMPLib.dll
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.add_feederForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Change_scheduleForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Check_status.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Check_the_scheduleForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Create_Schedule_Form.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_controlForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Create_userForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feeder_seting.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Feeder_Type.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.feedForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Feed_Type.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLoginForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMetka.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Get_infoForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManualControl.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.adminForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserLoginForm.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.User_Form.resources
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Технологии программирования\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ConditionMonitoring.resources

@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Get_infoForm
+    partial class ConditionMonitoring
     {
         /// <summary>
         /// Required designer variable.
@@ -29,56 +29,49 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(209, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(355, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Если вы хотите проверить количество корма";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(42, 36);
+            this.button1.Location = new System.Drawing.Point(302, 337);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 49);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Back";
+            this.button1.Size = new System.Drawing.Size(154, 86);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Open ConditionFile";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(331, 314);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 87);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Open LogFile";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 12);
+            this.textBox1.Location = new System.Drawing.Point(130, 45);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(534, 289);
-            this.textBox1.TabIndex = 10;
+            this.textBox1.TabIndex = 11;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Get_infoForm
+            // ConditionMonitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Get_infoForm";
-            this.Text = "Get_infoForm";
+            this.Controls.Add(this.label1);
+            this.Name = "ConditionMonitoring";
+            this.Text = "ConditionMonitoring";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,9 +79,8 @@ namespace WindowsFormsApp1
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
