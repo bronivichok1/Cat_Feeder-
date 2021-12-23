@@ -1,5 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -48,21 +55,12 @@ namespace WindowsFormsApp1
                
                 writer2.WriteLine("el");
                 writer2.Close();
-<<<<<<< HEAD
-=======
-                File.AppendAllText("FileINFO.txt", "\n" + "Задан тип кормушки" + loginTXT + "el");
->>>>>>> 6a79a1d5b3f5f72d7e5cc89b32ff68e11f4395d1
 
 
                 MessageBox.Show("Тип кормушки выбран! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
-<<<<<<< HEAD
                 this.Hide();
-=======
-                Hide();
-
->>>>>>> 6a79a1d5b3f5f72d7e5cc89b32ff68e11f4395d1
             }
 
             if (checkBox2.Checked)
@@ -81,12 +79,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Тип кормушки выбран! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
-<<<<<<< HEAD
                 this.Hide();
-=======
-                Hide();
-
->>>>>>> 6a79a1d5b3f5f72d7e5cc89b32ff68e11f4395d1
             }
 
         
@@ -96,7 +89,7 @@ namespace WindowsFormsApp1
         {
             feeder_seting fedset = new feeder_seting();
             fedset.Show();
-            Hide();
+            this.Hide();
         }
     }
 }

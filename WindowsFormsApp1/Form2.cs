@@ -1,5 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -27,13 +34,8 @@ namespace WindowsFormsApp1
         {
             User_Form User_form = new User_Form();
             User_form.Show();
-<<<<<<< HEAD
             this.Hide();
 
-=======
-            Hide();
-            NS = false;
->>>>>>> 6a79a1d5b3f5f72d7e5cc89b32ff68e11f4395d1
         }
 
 
@@ -166,17 +168,7 @@ namespace WindowsFormsApp1
 
         }
 
-<<<<<<< HEAD
        
-=======
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
-            if (NS = false)
-            {
-                axWindowsMediaPlayer1.close();
-                Controls.Remove(axWindowsMediaPlayer1);
->>>>>>> 6a79a1d5b3f5f72d7e5cc89b32ff68e11f4395d1
 
       
     }
