@@ -33,30 +33,12 @@ namespace WindowsFormsApp1
             if (checkBox1.Checked)
 
             {
-                FileStream file1 = new FileStream("name_feeder_for_type.txt", FileMode.Open);
-                StreamReader reader = new StreamReader(file1);
-
-                string line;
-                line = reader.ReadLine();
-
-                string loginTXT = null;
-                string feederT = null;
+              
                
-                while (((line = reader.ReadLine()) != null))
-                {
-                    string[] splitLine = line.Split(' ');
-
-
-                     loginTXT = splitLine[0] + " ";
-
-                }
                
-                reader.Close();
-                File.WriteAllText("FiderName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
+                File.WriteAllText("FeedType.txt", "");
+                FileStream file2 = new FileStream("FeedType.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
-                writer2.WriteLine( loginTXT + " ");
-                writer2.WriteLine( feederT + " ");
                 writer2.WriteLine("suhoy");
                 writer2.Close();
 
@@ -69,28 +51,12 @@ namespace WindowsFormsApp1
 
             if (checkBox2.Checked)
             {
-                FileStream file1 = new FileStream("name_feeder_for_type.txt", FileMode.Open);
-                StreamReader reader = new StreamReader(file1);
-
-                string line;
-                line = reader.ReadLine();
-
-                string loginTXT = null;
-                string feederT = null;
-
-                while (((line = reader.ReadLine()) != null))
-                {
-                    string[] splitLine = line.Split(' ');
-                    loginTXT = splitLine[0];
-                    feederT = splitLine[1];
-                }
-
-                reader.Close();
-                File.WriteAllText("FiderName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
+               
+                
+                File.WriteAllText("FeedType.txt", "");
+                FileStream file2 = new FileStream("FeedType.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
-                writer2.WriteLine("\n" + loginTXT + " ");
-                writer2.WriteLine("\n" + feederT + " ");
+           
                 writer2.WriteLine("zhidkiy");
                 writer2.Close();
 

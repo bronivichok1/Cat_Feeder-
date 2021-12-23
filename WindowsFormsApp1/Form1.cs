@@ -108,12 +108,18 @@ namespace WindowsFormsApp1
                 reader.Close();
                 MessageBox.Show("Такого пользователя нет ");
                 textBox1.Text = "";
+               
             }
             else
             {
                 
                
                 reader.Close();
+                File.WriteAllText("UserAKT.txt", "");
+                FileStream file2 = new FileStream("UserAKT.txt", FileMode.Create);
+                StreamWriter writer2 = new StreamWriter(file2);
+                writer2.WriteLine(login);
+                writer2.Close();
                 UserLoginForm User_Login_Form = new UserLoginForm();
                 User_Login_Form.Show();
                 this.Hide();

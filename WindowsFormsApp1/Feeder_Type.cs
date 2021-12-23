@@ -44,56 +44,46 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
+
             {
-                FileStream file1 = new FileStream("name_feeder_for_type.txt", FileMode.Open);
-                StreamReader reader = new StreamReader(file1);
+               
 
-                string line;
-                line = reader.ReadLine();
-                string[] splitLine = line.Split(' ');
-                string loginTXT = splitLine[0];
-                reader.Close();
-                File.WriteAllText("FiderName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
+         
+                File.WriteAllText("FeederType.txt", "");
+                FileStream file2 = new FileStream("FeederType.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
-                writer2.WriteLine(loginTXT + " ");
-                writer2.WriteLine("\n" + "el");
+               
+                writer2.WriteLine("el");
                 writer2.Close();
-                File.AppendAllText("FileINFO.txt", "\n" + "Задан тип кормушки"+loginTXT+"el");
 
-                MessageBox.Show("Тип кормушки установлен! ");
+
+                MessageBox.Show("Тип кормушки выбран! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
                 this.Hide();
-
             }
 
             if (checkBox2.Checked)
             {
-                FileStream file1 = new FileStream("name_feeder_for_type.txt", FileMode.Open);
-                StreamReader reader = new StreamReader(file1);
+                
 
-                string line;
-                line = reader.ReadLine();
-                string[] splitLine = line.Split(' ');
-                string loginTXT = splitLine[0];
-                reader.Close();
-                File.WriteAllText("FiderName\\Korm1.txt", "");
-                FileStream file2 = new FileStream("FiderName\\Korm1.txt", FileMode.Create);
+                
+                File.WriteAllText("FeederType.txt", "");
+                FileStream file2 = new FileStream("FeederType.txt", FileMode.Create);
                 StreamWriter writer2 = new StreamWriter(file2);
-                writer2.WriteLine(loginTXT + " ");
-                writer2.WriteLine("\n" + "mex");
+             
+                writer2.WriteLine("mex");
                 writer2.Close();
-                File.AppendAllText("FileINFO.txt", "\n" + "Задан тип кормушки" + loginTXT + "mex");
 
 
-                MessageBox.Show("Тип кормушки установлен! ");
+                MessageBox.Show("Тип кормушки выбран! ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
                 this.Hide();
-
             }
-        }
+
+        
+    }
 
         private void button2_Click(object sender, EventArgs e)
         {

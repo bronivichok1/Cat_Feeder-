@@ -63,5 +63,12 @@ namespace WindowsFormsApp1
             feederType.Show();
             this.Hide();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ManualControl ManualControl = new ManualControl();
+            ManualControl.Show();
+            this.Hide();
+        }
     }
 }

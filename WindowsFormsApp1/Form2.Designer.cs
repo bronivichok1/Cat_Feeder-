@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -48,7 +49,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 111);
+            this.button2.Location = new System.Drawing.Point(439, 438);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 52);
             this.button2.TabIndex = 1;
@@ -58,38 +59,65 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 203);
+            this.button3.Location = new System.Drawing.Point(439, 510);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 52);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Stop";
+            this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // axWindowsMediaPlayer1
+            // textBox1
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(157, 12);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(573, 691);
-            this.axWindowsMediaPlayer1.TabIndex = 3;
-            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            this.textBox1.Location = new System.Drawing.Point(439, 349);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(122, 26);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(439, 262);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(122, 26);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(474, 239);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Day";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(474, 326);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Hours";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 712);
-            this.Controls.Add(this.axWindowsMediaPlayer1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -98,6 +126,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
