@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -29,7 +22,7 @@ namespace WindowsFormsApp1
 
         }
 
-        
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -41,12 +34,12 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            string FeedStar = textBox1.Text+" ";
-            string FeedNew = textBox2.Text+" ";
+
+            string FeedStar = textBox1.Text + " ";
+            string FeedNew = textBox2.Text + " ";
             FileStream file1 = new FileStream("feeder_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
-            string line=null;
+            string line;
             bool T = true;
             while (((line = reader.ReadLine()) != null))
             {
@@ -54,7 +47,7 @@ namespace WindowsFormsApp1
                 string[] splitLine = line.Split(' ');
 
 
-                string loginTXT = splitLine[0] ;
+                string loginTXT = splitLine[0];
 
                 if (FeedStar != loginTXT)
                 {
@@ -90,12 +83,12 @@ namespace WindowsFormsApp1
                 File.Delete("feeder_file.txt");
                 File.Move(tempFile, "feeder_file.txt");
 
-                File.AppendAllText("feeder_file.txt", FeedNew+" ");
+                File.AppendAllText("feeder_file.txt", FeedNew + " ");
                 feeder_seting feeder_Seting = new feeder_seting();
                 feeder_Seting.Show();
-                this.Hide();
+                Hide();
                 File.WriteAllText("name_feeder_for_type.txt", FeedNew);
-                File.AppendAllText("FileINFO.txt", "\n" + "Кормушка" + FeedStar + "изменена на"+FeedNew);
+                File.AppendAllText("FileINFO.txt", "\n" + "Кормушка" + FeedStar + "изменена на" + FeedNew);
 
             }
         }
@@ -104,9 +97,9 @@ namespace WindowsFormsApp1
         {
             feeder_seting feeds = new feeder_seting();
             feeds.Show();
-            this.Hide();
+            Hide();
         }
     }
 
-    }
+}
 

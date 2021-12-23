@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -37,7 +30,7 @@ namespace WindowsFormsApp1
             if (textBox2.Text == pass)
             {
                 AdminForm.Show();
-                this.Hide();
+                Hide();
                 File.AppendAllText("FileINFO.txt", "\n" + "Админ зашёл в аккаунт" );
             }
             else MessageBox.Show("Не верный пароль");
@@ -51,14 +44,14 @@ namespace WindowsFormsApp1
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

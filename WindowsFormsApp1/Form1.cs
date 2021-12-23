@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.IO;
+using System.Data.SqlClient;
+using System.Data;
+using static System.Data.CommandType;
+using static WindowsFormsApp1.Data.Repository;
 
 namespace WindowsFormsApp1
 {
@@ -20,16 +16,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-       
+
         private void button2_Click(object sender, EventArgs e)
         {
             AdminLoginForm lgnForm = new AdminLoginForm(this);
-            
+
             string login = "admin";
             if (textBox2.Text == login)
             {
                 lgnForm.Show();
-                this.Hide();
+                Hide();
             }
             else MessageBox.Show("Не верный логин");
             textBox2.Text = "";
@@ -63,35 +59,34 @@ namespace WindowsFormsApp1
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            textBox1.UseSystemPasswordChar = true;
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string login;
             bool T = true;
-            login = textBox1.Text ;
+            var login = textBox1.Text;
             FileStream file1 = new FileStream("log_file.txt", FileMode.Open, FileAccess.ReadWrite);
             StreamReader reader = new StreamReader(file1);
             string line;
 
-            while (((line = reader.ReadLine()) != null))
+            while ((line = reader.ReadLine()) != null)
             {
 
                 string[] splitLine = line.Split(' ');
 
 
-                string loginTXT = splitLine[0] ;
+                string loginTXT = splitLine[0];
 
                 if (login != loginTXT)
                 {
 
                     T = true;
-                    
+
                 }
                 else
                 {
@@ -103,7 +98,7 @@ namespace WindowsFormsApp1
 
             }
 
-            if (T == true)
+            if (T)
             {
                 reader.Close();
                 MessageBox.Show("Такого пользователя нет ");
@@ -112,8 +107,8 @@ namespace WindowsFormsApp1
             }
             else
             {
-                
-               
+
+
                 reader.Close();
                 File.WriteAllText("UserAKT.txt", "");
                 FileStream file2 = new FileStream("UserAKT.txt", FileMode.Create);
@@ -122,20 +117,24 @@ namespace WindowsFormsApp1
                 writer2.Close();
                 UserLoginForm User_Login_Form = new UserLoginForm();
                 User_Login_Form.Show();
-                this.Hide();
+                Hide();
 
             }
         }
 
-          
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
-
-            
-
-    }
-            
-            
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
- 
+        }
+    }
+
+
+}
+
+
+

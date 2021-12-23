@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using WindowsFormsApp1.Data;
+using static System.Windows.Forms.Application;
 
 namespace WindowsFormsApp1
 {
-    static class Program
+    internal static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+
         [STAThread]
-        static void Main()
+        private static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            var user = Repository.GetUser("admin","admin");
+            
+            EnableVisualStyles();
+            SetCompatibleTextRenderingDefault(false);
+            Run(new Form1());
         }
     }
 }

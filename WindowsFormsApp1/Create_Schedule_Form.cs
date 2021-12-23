@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -122,7 +115,7 @@ namespace WindowsFormsApp1
             File.AppendAllText("FileINFO.txt", "\n" + "Создано расписание"+Schedule);
             Create_Schedule_Form Create_Schedule_Form = new Create_Schedule_Form();
             Create_Schedule_Form.Show();
-            this.Hide();
+            Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)

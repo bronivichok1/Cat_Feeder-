@@ -10,8 +10,8 @@ namespace WindowsFormsApp1
         public Get_infoForm()
         {
             InitializeComponent();
-            
-            
+
+
         }
 
 
@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
         {
             User_Form UsFor = new User_Form();
             UsFor.Show();
-            this.Hide();
+            Hide();
         }
 
         private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-            
+
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 2;
             openFileDialog1.RestoreDirectory = true;
